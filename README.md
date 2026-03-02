@@ -1,53 +1,42 @@
 # MINI-PROJECT2
 Linear Transformation Pipeline — NumPy
+Overview
 
-This project implements a complete linear transformation pipeline using pure NumPy, following full vectorization (no Python loops).
+This project implements a fully vectorized linear transformation pipeline using NumPy. It follows standard machine learning preprocessing steps and avoids any use of Python loops.
 
 Objectives
 
-The notebook performs the following steps:
-
 Create input matrix X (batch_size, n_features)
 
-Create weight matrix W and bias vector b with compatible shapes
+Create compatible weight matrix W and bias vector b
 
-Standardize X column-wise
+Standardize input features column-wise
 
-Compute linear transformation using matrix multiplication and bias addition
+Apply linear transformation using matrix multiplication
 
-Normalize rows of Y to unit norm (optional)
+Optionally normalize output rows
 
-Print shapes at every step
+Print shapes at each step for verification
 
-No Python loops used
+Use only vectorized NumPy operations
 
-Key Concepts Demonstrated
+Key Concepts
 
 Matrix multiplication using @
 
-Broadcasting with bias vector b
+Broadcasting with bias vector
 
-Feature standardization using:
+Column-wise standardization
 
-mean(axis=0, keepdims=True)
+Row normalization
 
-std(axis=0, keepdims=True)
+Shape validation for dimensional consistency
 
-Row normalization using np.linalg.norm
+Efficient vectorized computation
 
-Shape verification for dimensional consistency
+Implementation Details
 
-Why No Loops?
-
-Vectorized NumPy operations are:
-
-Faster
-
-More memory efficient
-
-Closer to mathematical notation
-
-Standard practice in machine learning pipelines
+The pipeline first prepares the input data and parameters, then standardizes features to ensure consistent scaling. After that, it applies a linear transformation and optionally normalizes the output. Each stage prints tensor shapes to confirm compatibility and correctness.
 
 Technologies Used
 
@@ -57,22 +46,4 @@ NumPy
 
 Output
 
-The script prints the shapes of:
-
-X
-
-W
-
-b
-
-means
-
-stds
-
-X_standardized
-
-Y
-
-Y_normalized
-
-This ensures dimensional compatibility across the transformation pipeline.
+The script prints matrix shapes at every stage to ensure correct dimensions throughout the transformation process.

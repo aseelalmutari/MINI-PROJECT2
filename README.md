@@ -1,10 +1,11 @@
 # MINI-PROJECT2
-Linear Transformation Pipeline — NumPy
-Overview
+🚀 Linear Transformation Pipeline — NumPy
+📌 Overview
 
-This project implements a fully vectorized linear transformation pipeline using NumPy. It follows standard machine learning preprocessing steps and avoids any use of Python loops.
+This project demonstrates a fully vectorized linear transformation pipeline built using pure NumPy.
+The implementation follows best practices in numerical computing and avoids Python loops entirely.
 
-Objectives
+🎯 Objectives
 
 Create input matrix X (batch_size, n_features)
 
@@ -16,17 +17,17 @@ Apply linear transformation using matrix multiplication
 
 Optionally normalize output rows
 
-Print shapes at each step for verification
+Print shapes at each stage for verification
 
 Use only vectorized NumPy operations
 
-Key Concepts
+🧠 Key Concepts Demonstrated
 
 Matrix multiplication using @
 
 Broadcasting with bias vector
 
-Column-wise standardization
+Column-wise feature standardization
 
 Row normalization
 
@@ -34,16 +35,24 @@ Shape validation for dimensional consistency
 
 Efficient vectorized computation
 
-Implementation Details
+⚙️ Implementation Flow
 
-The pipeline first prepares the input data and parameters, then standardizes features to ensure consistent scaling. After that, it applies a linear transformation and optionally normalizes the output. Each stage prints tensor shapes to confirm compatibility and correctness.
+Initialize input matrix and parameters
 
-Technologies Used
+Standardize features to ensure consistent scaling
+
+Apply linear transformation
+
+Normalize output rows (optional)
+
+Verify shapes at each step
+
+🛠 Technologies Used
 
 Python
 
 NumPy
 
-Output
+✅ Output
 
-The script prints matrix shapes at every stage to ensure correct dimensions throughout the transformation process.
+The script prints the shape of matrices throughout the pipeline to confirm correct dimensional transformations and compatibility.
